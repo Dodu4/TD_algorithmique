@@ -15,5 +15,5 @@ for Gardien in BaseGardiens if Gardien.NoCabine == Alien.NoCabine}
 print("3. La réponse est ",Triples)
 
 ### Question 4 : quel est l'ensemble des couples (alien,allée) pour chaque alien:
-Couples= {(Alien.Nom, Alien.NoCabine for NoAllee in Cabine) for Alien in BaseAliens}
+Couples={(Alien.Nom, (Alien.NoCabine for NoAllee in BaseCabine)) for Alien in BaseAliens}
 print("4. La réponse est ",Couples)
